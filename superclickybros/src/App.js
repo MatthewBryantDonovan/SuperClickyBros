@@ -1,6 +1,6 @@
 import React from "react";
+import Title from "./components/Title"
 import SmashToon from "./components/SmashToon";
-import Wrapper from "./components/Wrapper";
 import importToons from "./importToons.json";
 import "./App.css";
 
@@ -617,24 +617,26 @@ class App extends React.Component {
   }
 
   render() { 
-    return (<div>
-      <h4 className="title">Super Clicky Bros.</h4>
-      <span className="topdog">Current count: {this.state.count}</span>
-      {/* <span>{JSON.stringify(this.state.reset)}</span> */}
-      {/* <span>{JSON.stringify(this.state.smashtoons)}</span> */}
-    <Wrapper>
-      {this.state.smashtoons.map(smashtoonz => (
-      <SmashToon
-        key={smashtoonz.position}
-        id={smashtoonz.id}
-        position={smashtoonz.position}
-        myNewMethod={this.myNewMethod}
-        name={smashtoonz.name}
-        image={smashtoonz.image}
-        clicked={smashtoonz.clicked}
-      />
-    ))}
-    </Wrapper>
+    return (
+    <div>
+        <Title />
+        <span className="topdog"> Joined the Battle: {this.state.count}</span>
+        <div className="container">
+            <div className="row">
+                {this.state.smashtoons.map(smashtoonz => (
+                <SmashToon
+                    key={smashtoonz.position}
+                    id={smashtoonz.id}
+                    position={smashtoonz.position}
+                    myNewMethod={this.myNewMethod}
+                    name={smashtoonz.name}
+                    image={smashtoonz.image}
+                    clicked={smashtoonz.clicked}
+                />
+                 ))}
+            </div>
+        </div>
+        <div className="footer row"></div>
     </div>
   );
   }

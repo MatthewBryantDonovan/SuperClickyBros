@@ -1,13 +1,16 @@
 .border-type {
   border: 5px outset aqua;
-  margin: 1px;
+  /* margin: 1px; */
+  background-color: black;
 }
 
 .size-img{
-  width: 11.5vw;
+  /* width: 11.5vw; */
+  width: 100%;
+  /* padding: 0px; */
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
   .size-img{
     width: 18.5vw;
   }
@@ -22,4 +25,4 @@
   .size-img{
     width: 28vw;
   }
-}
+} */
