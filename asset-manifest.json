@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SuperClickyBros/static/css/main.d6e1b1b6.chunk.css",
+    "main.js": "/SuperClickyBros/static/js/main.0fc389ad.chunk.js",
+    "main.js.map": "/SuperClickyBros/static/js/main.0fc389ad.chunk.js.map",
+    "runtime-main.js": "/SuperClickyBros/static/js/runtime-main.6881278f.js",
+    "runtime-main.js.map": "/SuperClickyBros/static/js/runtime-main.6881278f.js.map",
+    "static/js/2.01debecb.chunk.js": "/SuperClickyBros/static/js/2.01debecb.chunk.js",
+    "static/js/2.01debecb.chunk.js.map": "/SuperClickyBros/static/js/2.01debecb.chunk.js.map",
+    "index.html": "/SuperClickyBros/index.html",
+    "precache-manifest.3869b758d2bee6bc5f427341ed583ae0.js": "/SuperClickyBros/precache-manifest.3869b758d2bee6bc5f427341ed583ae0.js",
+    "service-worker.js": "/SuperClickyBros/service-worker.js",
+    "static/css/main.d6e1b1b6.chunk.css.map": "/SuperClickyBros/static/css/main.d6e1b1b6.chunk.css.map",
+    "static/js/2.01debecb.chunk.js.LICENSE.txt": "/SuperClickyBros/static/js/2.01debecb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6881278f.js",
+    "static/js/2.01debecb.chunk.js",
+    "static/css/main.d6e1b1b6.chunk.css",
+    "static/js/main.0fc389ad.chunk.js"
+  ]
+}
