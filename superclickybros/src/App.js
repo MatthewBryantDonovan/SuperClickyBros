@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./components/Title"
-import Instructions from "./components/Instructions"
 import SmashToon from "./components/SmashToon";
 import importToons from "./importToons.json";
 import "./App.css";
@@ -11,8 +10,7 @@ class App extends React.Component {
   state = {
     reset: importToons,
     smashtoons: importToons,
-    count: 0,
-    gameStart: false
+    count: 0
   };
 
   fillReset = () => {
@@ -573,12 +571,6 @@ class App extends React.Component {
   
   myNewMethod = (clicked, id) => {
 
-    if(this.state.gameStart === false){
-        this.setState({
-            gameStart: true
-        });
-    }
-
     const one = this.fillReset();
 
     // if id is true reset the game
@@ -628,10 +620,6 @@ class App extends React.Component {
     return (
     <div>
         <Title />
-        <Instructions 
-        gameStart={this.state.gameStart}
-        count={this.state.count}
-        />
         <span className="topdog"> Joined the Battle: {this.state.count}</span>
         <div className="container">
             <div className="row">
